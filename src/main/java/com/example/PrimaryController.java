@@ -30,7 +30,7 @@ public class PrimaryController implements Initializable {
 
     public FlowPane carregarPersonagens(){
         try {
-            var url = new URL("https://rickandmortyapi.com/api/character?page=" + pagina);
+            var url = new URL("https://api.disneyapi.dev/character" + pagina);
             var con = url.openConnection();
             con.connect();
             var is = con.getInputStream();
