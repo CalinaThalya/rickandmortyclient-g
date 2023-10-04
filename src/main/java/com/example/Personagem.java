@@ -2,29 +2,23 @@ package com.example;
 
 public class Personagem {
 
-    private int id;
+
     private String name;
-    private String status;
+    private String alternate_name;
     private String species;
-    private String type;
     private String gender;
-    private Object origin;
-    private Object location;
-    private String image;
-    private Object episode;
-    private String url;
+    private String house;
+    private String dateOfBirth;
+    private String yearOfBirth;
+    private String wizard;
+    private String antestry;
+    private String eyeColour;
+    private String hairColour;
+   
     private String created;
 
     public Personagem() {
 
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -35,12 +29,12 @@ public class Personagem {
         this.name = nome;
     }
 
-    public String getStatus() {
-        return status;
+    public String getAlternate_name() {
+        return alternate_name;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setAlternate_name(String alternate_name) {
+        this.alternate_name = alternate_name;
     }
 
     public String getSpecies() {
@@ -51,14 +45,6 @@ public class Personagem {
         this.species = species;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
     public String getGender() {
         return gender;
     }
@@ -67,45 +53,62 @@ public class Personagem {
         this.gender = gender;
     }
 
-    public Object getOrigin() {
-        return origin;
+    public String getHouse() {
+        return house;
     }
 
-    public void setOrigin(Object origin) {
-        this.origin = origin;
+    public void setHouse(String house) {
+        this.house = house;
     }
 
-    public Object getLocation() {
-        return location;
+    public String getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setLocation(Object location) {
-        this.location = location;
+    public void setDateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
-    public String getImage() {
-        return image;
+    public String getYearOffBirth() {
+        return yearOfBirth;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setYearOfBirth(String yearOfBirth) {
+        this.yearOfBirth = yearOfBirth;
     }
 
-    public Object getEpisode() {
-        return episode;
+    public String getWizard() {
+        return wizard;
     }
 
-    public void setEpisode(Object episode) {
-        this.episode = episode;
+    public void setWizard(String wizard) {
+        this.wizard = wizard;
     }
 
-    public String getUrl() {
-        return url;
+    public String getAncestry() {
+        return antestry;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setAncestry(String antestry) {
+        this.antestry = antestry;
     }
+
+    public String getEyeColour() {
+        return eyeColour;
+    }
+
+    public void setEyeColour(String eyeColour) {
+        this.eyeColour = eyeColour;
+    }
+
+     public String getHairColour() {
+        return hairColour;
+    }
+
+    public void setHairColour(String hairColour) {
+        this.hairColour = hairColour;
+    }
+
 
     public String getCreated() {
         return created;

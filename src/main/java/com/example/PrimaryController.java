@@ -30,7 +30,7 @@ public class PrimaryController implements Initializable {
 
     public FlowPane carregarPersonagens(){
         try {
-            var url = new URL("https://api.disneyapi.dev/character" + pagina);
+            var url = new URL("https://hp-api.onrender.com/api/characters" + pagina);
             var con = url.openConnection();
             con.connect();
             var is = con.getInputStream();
@@ -54,7 +54,7 @@ public class PrimaryController implements Initializable {
         var flow = new FlowPane();
 
         lista.forEach(personagem -> {
-            var image = new ImageView(new Image(personagem.getImage()));
+            var image = new ImageView(new Image(personagem.getName()));
             image.setFitHeight(200);
             image.setFitWidth(200);
 
